@@ -1,51 +1,49 @@
-name: Java CI with Maven and Docker
+name: CI/CD Pipeline
 
 on:
   push:
     branches:
       - main
   pull_request:
-    branches:
-      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the code
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      # Set up JDK 11
-      - name: Set up JDK 11
-        uses: actions/setup-java@v2
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
         with:
-          java-version: '11'
+          distribution: 'temurin'
+          java-version: '17'
 
-      # Cache Maven dependencies
       - name: Cache Maven dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      # Build with Maven
       - name: Build with Maven
-        run: mvn clean install -DskipTests=true
+        run: mvn clean package
 
-      # Run unit tests
-      - name: Run tests with Maven
+      - name: Run tests
         run: mvn test
 
-      # Build the Docker image (locally)
-      - name: Build Docker image
-        run: |
-          docker build -t file-encryption-utility:${{ github.sha }} .
+  docker:
+    needs: build
+    runs-on: ubuntu-latest
 
-      # Optionally, run the Docker container (this can be skipped if not needed)
-      - name: Run Docker container
-        run: |
-          docker run -d --name file-encryption-utility-container file-encryption-utility:${{ github.sha }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
+        run: docker build -t file-encryption-utility .
