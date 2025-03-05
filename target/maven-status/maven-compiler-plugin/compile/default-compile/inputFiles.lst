@@ -1,0 +1,5 @@
+/workspaces/file-encryption-utility/src/main/java/com/fileencryption/cli/CommandLineInterface.java
+/workspaces/file-encryption-utility/src/main/java/com/fileencryption/core/CryptoUtils.java
+/workspaces/file-encryption-utility/src/main/java/com/fileencryption/core/DecryptionService.java
+/workspaces/file-encryption-utility/src/main/java/com/fileencryption/core/EncryptionService.java
+/workspaces/file-encryption-utility/src/main/java/com/fileencryption/core/KeyGeneratorUtil.java

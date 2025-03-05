@@ -1,0 +1,5 @@
+com/fileencryption/core/DecryptionService.class
+com/fileencryption/core/EncryptionService.class
+com/fileencryption/core/CryptoUtils.class
+com/fileencryption/cli/CommandLineInterface.class
+com/fileencryption/core/KeyGeneratorUtil.class
