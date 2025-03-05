@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.fileencryption.AppTest" time="0.167" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.fileencryption.AppTest" time="0.217" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -11,7 +11,7 @@
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/local/sdkman/candidates/java/21.0.5-ms/lib"/>
-    <property name="sun.java.command" value="/workspaces/file-encryption-utility/target/surefire/surefirebooter-20250305060820181_3.jar /workspaces/file-encryption-utility/target/surefire 2025-03-05T06-08-20_056-jvmRun1 surefire-20250305060820181_1tmp surefire_0-20250305060820181_2tmp"/>
+    <property name="sun.java.command" value="/workspaces/file-encryption-utility/target/surefire/surefirebooter-20250305070711532_3.jar /workspaces/file-encryption-utility/target/surefire 2025-03-05T07-07-11_383-jvmRun1 surefire-20250305070711532_1tmp surefire_0-20250305070711532_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/workspaces/file-encryption-utility/target/test-classes:/workspaces/file-encryption-utility/target/classes:/home/codespace/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:/home/codespace/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/home/codespace/.m2/repository/info/picocli/picocli/4.7.0/picocli-4.7.0.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/mockito/mockito-core/5.10.0/mockito-core-5.10.0.jar:/home/codespace/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/codespace/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.jar:/home/codespace/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/codespace/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/home/codespace/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -26,7 +26,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/workspaces/file-encryption-utility/target/surefire/surefirebooter-20250305060820181_3.jar"/>
+    <property name="surefire.real.class.path" value="/workspaces/file-encryption-utility/target/surefire/surefirebooter-20250305070711532_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-LTS"/>
     <property name="user.name" value="codespace"/>
@@ -53,6 +53,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testKeyFileGeneration" classname="com.fileencryption.AppTest" time="0.101"/>
-  <testcase name="testEncryptionAndDecryption" classname="com.fileencryption.AppTest" time="0.013"/>
+  <testcase name="testKeyFileGeneration" classname="com.fileencryption.AppTest" time="0.136"/>
+  <testcase name="testEncryptionAndDecryption" classname="com.fileencryption.AppTest" time="0.006"/>
 </testsuite>
