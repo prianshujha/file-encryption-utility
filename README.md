@@ -65,7 +65,10 @@ cd file-encryption-utility
 ```bash
 mvn clean install
 ```
-
+Alternatively, you can build the project using docker
+```
+docker build -t file-encryption-utility
+```
 ---
 
 ## Usage
